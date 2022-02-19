@@ -1,0 +1,113 @@
+body{
+    height: 2000px;
+}
+:root{
+    --TextPink:#ff206e;
+    --TextDark:#222;
+    --TextLight:#f1f1f1;
+}
+
+.text-pink{
+    color: var(--TextPink);
+}
+.text-dark{
+    color: var(-TextDark);
+}
+.text-light{
+    color: var(--TextLight);
+}
+
+/*start of header*/
+header{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+ .nav-link:hover{
+color: var(--TextPink) !important;
+transition: 500ms;
+}
+.icons .fab{
+    border: 1px solid #222;
+    padding: 9px;
+    /* .. استخدمت كلاسات على ديف الايكون .. بدنا نباعد بينهم عن طريق فليكس*/
+}
+.icons .fab:hover{
+    border-color: white;
+    color: var(--TextPink);
+    transition: 500ms;
+}
+header .view-portfolio:hover{
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+}
+/* end of header */
+/* start of about */
+.title-one{
+    font-size: 6rem !important;
+    color: var(--TextLight);
+}
+.title-two{
+    font-size: 2.5rem !important;
+    padding:35px; /*حتى تنزل لنص الهيدر الاول*/
+}
+.email {
+text-decoration: underline;
+font-weight: bold;
+}
+/* end of about */
+
+/* start of services */
+.services{
+    background-image: url(../images/dark_dot.jpg);
+}
+.services-item{
+    background-color: white;
+    /* padding: 80px 20px; */
+    position: relative;
+}
+.services-item .fas{
+    border:white solid 2px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 17px;
+}
+.services-item .fas:hover{
+    color: var(--TextPink);
+    transition: 500ms;
+}
+.services-item .service-heading{
+    position: relative;
+}
+.services-item .service-heading::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--TextPink);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end of services */
+/* start of portfolio */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--TextPink) !important;
+  background-color: transparent !important;
+ }
+ .nav-pills  .nav-link{
+     color: black !important;
+     font-weight: bold;
+ }
+ .portfolio img{
+     width: 100%;
+ }
+/* end of portfolio */
